@@ -1,4 +1,4 @@
 FROM openjdk:17
-ADD target/*.jar /
 EXPOSE 8080
+ADD target/integration.jar integration.jar
 ENTRYPOINT ["java","-jar","/integration.jar"]
